@@ -1,5 +1,8 @@
 # Prompt Engineering:
 
+
+
+
 #### Prompt engineering, in the context of models like ChatGPT, refers to the process of carefully crafting and refining input prompts to obtain desired outputs from the model. Given that models like GPT-4 don't have any explicit task-specific training, the way you phrase or structure a prompt can significantly influence the model's response.
 
 ## Key Aspects of Prompt Engineering
@@ -83,5 +86,7 @@ Coming home after such a day, one is undoubtedly exhausted. But it's a good kind
 
 
 > Example of previous prompt with a constraint added:
+
+
 - You are an experienced Twitter user, known for posting highly engadging tweets that lead users to like or retweet the tweets you post... write a tweet about hiking, the tweet should use no more than 2 emojis and target nature enthusiasts, it should highlight two advantages of going on a hike regularly.
 

@@ -1,5 +1,9 @@
 # AI Chat-GPT & LLM's
 
+> Command to create table of contents: `find . -name "*.md" -type f | sed 's/^\.\///' | sed 's/\.md$//' | awk -F/ '{print "- [" $NF "](./" $0 ".md)"}' > links.md`
+
+### [Table of Contents](./links.md)
+
 ### (Chat Generative Pre-trained Transformer) and Large Language Models (LLMs) like GPT-3 are a type of artificial intelligence model designed for natural language processing. Here's a summary of how they work:
 
 #### [Link To Chat](https://chat.openai.com/)
