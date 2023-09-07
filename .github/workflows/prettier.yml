@@ -3,7 +3,7 @@ name: Prettier Code Formatter
 on:
   push:
     branches:
-      - main # Replace with your default branch if not 'main'
+      - master # Replace with your default branch if not 'main'
 
 jobs:
   prettier:
