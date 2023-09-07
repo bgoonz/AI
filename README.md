@@ -62,10 +62,20 @@
 
   - In this case chat GPT will use the first question to help answer the second question.
 
-
 > Chat-GPT was trained on data up to `September 2021`
 
-
 - If you give chat-GPT a url and ask it to sumarize the article... it will fake a description of the article... it will not actually summarize the article... rember it does not actually have access to the internet.
+    - If the url gives no or minimal information about the article... chat-GPT will not be able to give even a remotly accurate description of the article.
+
+---
+
+### Chat-GPT Plugins:
+- Currently, chat-GPT cannot write & exicute code in the browser... it can just write code. 
 
 
+> Expedia Plugin:
+
+
+I live in New York and I want to fly to Lisbon on September 29th. I want to stay for 7 days, the flight should be a direct flight, I want to arrive in the afternoon or later, the flight back should be in the morning.
+
+![Expedia Plugin](./images/2023-09-07-13-07-02.png)
