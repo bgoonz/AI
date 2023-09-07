@@ -19,8 +19,11 @@
 Prompt engineering is crucial because, in many applications, slight changes in the prompt can lead to significantly different outputs. As such, understanding how to effectively communicate with models like ChatGPT is an important skill for users and developers.
 
 ---
+
 **Examples**
-1. 
+
+1.
+
 ## The Joy of Hiking
 
 Hiking is more than just a physical activity; it's a journey of the soul. As one ventures into the wilderness, each step brings them closer to nature and further from the hustle and bustle of daily life. The sound of leaves crunching underfoot, the distant chirping of birds, and the gentle rustling of trees in the wind are a symphony of serenity.
@@ -33,9 +36,8 @@ Hiking is more than just a physical activity; it's a journey of the soul. As one
 
 In conclusion, hiking is not just about reaching a destination; it's about the journey, the experiences, and the memories made along the way. So, lace up those boots and hit the trails!
 
+2.
 
-
-2. 
 # A Summer Day's Hike: From Dawn to Dusk
 
 The first light of dawn paints the sky in hues of pink and orange. As the world slowly awakens, there's a unique feeling of anticipation in the air. It's the perfect time to embark on a summer hiking adventure.
@@ -55,7 +57,5 @@ The descent, though tiring, is filled with a sense of contentment. Every muscle 
 ## Conclusion
 
 Coming home after such a day, one is undoubtedly exhausted. But it's a good kind of tired. The kind where you sink into your bed with a smile on your face, memories of the day flooding your mind, and a heart full of gratitude for the beauty of the world.
-
-
 
 ---
