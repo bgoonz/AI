@@ -94,4 +94,11 @@ I live in New York and I want to fly to Lisbon on September 29th. I want to stay
 - Unlike chat-GPT bing-GPT does have the ability to browse the web to augment it's knowledge base.
 - In order to access bing Chat... you must have a microsoft edge and then navigate to the bing search engine and press the `Chat` button.
 - In bing... there are three styles you can get your response in... `Creative`,`Balanced(default)`,`Precise`  
+- Creative responses... tend to be more formatted (i.e. more titles and subtitles and lists)
 
+> Bing page context:
+![Bing Page Context](./images/2023-09-07-14-29-10.png)
+
+> Bing Compose feature:
+
+![Bing Compose](./images/2023-09-07-14-33-15.png)
