@@ -65,40 +65,59 @@
 > Chat-GPT was trained on data up to `September 2021`
 
 - If you give chat-GPT a url and ask it to sumarize the article... it will fake a description of the article... it will not actually summarize the article... rember it does not actually have access to the internet.
-    - If the url gives no or minimal information about the article... chat-GPT will not be able to give even a remotly accurate description of the article.
+  - If the url gives no or minimal information about the article... chat-GPT will not be able to give even a remotly accurate description of the article.
 
 ---
 
 ### Chat-GPT Plugins:
-- Currently, chat-GPT cannot write & exicute code in the browser... it can just write code. 
 
+- Currently, chat-GPT cannot write & exicute code in the browser... it can just write code.
 
 > Expedia Plugin:
-
 
 I live in New York and I want to fly to Lisbon on September 29th. I want to stay for 7 days, the flight should be a direct flight, I want to arrive in the afternoon or later, the flight back should be in the morning.
 
 ![Expedia Plugin](./images/2023-09-07-13-07-02.png)
 
-
----
 ---
 
+---
 
 ### Google Bard & Microsoft Bing Chat:
 
 ##### [Bing GPT](https://www.bing.com/)
 
-
 - For some reason even though they depend on the same model... chat-GPT gives longer form answers to the same prompts as Bing GPT.
 - Unlike chat-GPT bing-GPT does have the ability to browse the web to augment it's knowledge base.
 - In order to access bing Chat... you must have a microsoft edge and then navigate to the bing search engine and press the `Chat` button.
-- In bing... there are three styles you can get your response in... `Creative`,`Balanced(default)`,`Precise`  
+- In bing... there are three styles you can get your response in... `Creative`,`Balanced(default)`,`Precise`
 - Creative responses... tend to be more formatted (i.e. more titles and subtitles and lists)
 
 > Bing page context:
-![Bing Page Context](./images/2023-09-07-14-29-10.png)
+> ![Bing Page Context](./images/2023-09-07-14-29-10.png)
 
 > Bing Compose feature:
+> ![Bing Compose](./images/2023-09-07-14-33-15.png)
 
-![Bing Compose](./images/2023-09-07-14-33-15.png)
+---
+
+### Google Bard:
+
+#### [Google Bard](https://bard.google.com/)
+
+- Google bard gives you the result of your pormpt all at once rather than generating the response word by word before your eyes.
+
+##### Features:
+
+    - Drafts (shows multiple versions of the response to the given prompt)
+    - google it (searches the web for the prompt)
+
+![Comparison](./images/2023-09-07-15-02-11.png)
+
+---
+
+---
+
+### Prompt Engineering:
+
+[Prompt Engineering](./1-prompt-engineering/PromptEngineering.md)
