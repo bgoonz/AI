@@ -31,7 +31,7 @@ Hiking is more than just a physical activity; it's a journey of the soul. As one
 ### Benefits of Hiking
 
 1. **Physical Health**: Hiking is a full-body workout that strengthens muscles, improves cardiovascular health, and boosts endurance.
-2. **Mental Well-being**: Being in nature reduces stress, anxiety, and depression. The calmness of the outdoors acts as a natural therapy.
+2. **Mental Well-being**: Being in nature reduces stress, anxiety, and depression. The calmness of the outdoors acts as natural therapy.
 3. **Connection with Nature**: Hiking allows one to truly appreciate the beauty of the natural world, from majestic mountains to tranquil forests.
 
 In conclusion, hiking is not just about reaching a destination; it's about the journey, the experiences, and the memories made along the way. So, lace up those boots and hit the trails!
@@ -62,11 +62,26 @@ Coming home after such a day, one is undoubtedly exhausted. But it's a good kind
 
 ### Custom Instructions
 
-> In order to use custom instructions click the three dots by your account icon (bottom left) and select `Custom Instructions` from the menu.
-> You can use this feature to tell chat-GPT about your use case and what kind of response you wish to recieve.
-> ![Custom Instructions](./../images/2023-09-07-15-16-47.png)
-
-![My custom instructions](./../images/2023-09-07-15-22-44.png)
+> In order to use custom instructions, click the three dots by your account icon (bottom left) and select `Custom Instructions` from the menu.
+> You can use this feature to tell ChatGPT about your use case and what kind of response you wish to receive.
 
 
+>![My custom instructions](./../images/2023-09-07-15-22-44.png)
+
+**Giving ChatGPT Context**
+
+- > Basic prompt:
+- Write a tweet about hiking.
+
+- > Contextual prompt:
+- You are an experienced Twitter user, known for posting highly engaging tweets that lead users to like or retweet the tweets you post... write a tweet about hiking.
+
+**Components of a Good Prompt**
+- Goal
+- Role
+- Constraints
+
+
+> Example of previous prompt with a constraint added:
+- You are an experienced Twitter user, known for posting highly engadging tweets that lead users to like or retweet the tweets you post... write a tweet about hiking, the tweet should use no more than 2 emojis and target nature enthusiasts, it should highlight two advantages of going on a hike regularly.
 
