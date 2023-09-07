@@ -79,3 +79,19 @@
 I live in New York and I want to fly to Lisbon on September 29th. I want to stay for 7 days, the flight should be a direct flight, I want to arrive in the afternoon or later, the flight back should be in the morning.
 
 ![Expedia Plugin](./images/2023-09-07-13-07-02.png)
+
+
+---
+---
+
+
+### Google Bard & Microsoft Bing Chat:
+
+##### [Bing GPT](https://www.bing.com/)
+
+
+- For some reason even though they depend on the same model... chat-GPT gives longer form answers to the same prompts as Bing GPT.
+- Unlike chat-GPT bing-GPT does have the ability to browse the web to augment it's knowledge base.
+- In order to access bing Chat... you must have a microsoft edge and then navigate to the bing search engine and press the `Chat` button.
+- In bing... there are three styles you can get your response in... `Creative`,`Balanced(default)`,`Precise`  
+
