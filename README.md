@@ -2,6 +2,8 @@
 
 ### (Chat Generative Pre-trained Transformer) and Large Language Models (LLMs) like GPT-3 are a type of artificial intelligence model designed for natural language processing. Here's a summary of how they work:
 
+#### [Link To Chat](https://chat.openai.com/)
+
 1. Pre-training:
 
 - These models are pre-trained on vast amounts of text data from the internet. During this phase, they learn to predict the next word in a sentence by analyzing the context of the previous words. This process helps them develop an understanding of grammar, syntax, and some level of world knowledge.
@@ -51,3 +53,19 @@
 - Who is Michael Jordan?
 
 - In all of the examples above the questions are unrelated to each other... however Chat-GPT is context aware... which means that (up to a certain number of tokens) it can factor in previous questions for context in answering the most current question asked of it.
+- Chat-GPT is programmed to have a certain amount of randomness to it's responses so the same question asked multiple times will not always result in the same answer.
+
+> Example of answering a question with context:
+
+- What is a Wiener Schnitzel?
+- Please give me the recipe?
+
+  - In this case chat GPT will use the first question to help answer the second question.
+
+
+> Chat-GPT was trained on data up to `September 2021`
+
+
+- If you give chat-GPT a url and ask it to sumarize the article... it will fake a description of the article... it will not actually summarize the article... rember it does not actually have access to the internet.
+
+
