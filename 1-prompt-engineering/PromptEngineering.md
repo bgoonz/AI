@@ -59,3 +59,11 @@ The descent, though tiring, is filled with a sense of contentment. Every muscle 
 Coming home after such a day, one is undoubtedly exhausted. But it's a good kind of tired. The kind where you sink into your bed with a smile on your face, memories of the day flooding your mind, and a heart full of gratitude for the beauty of the world.
 
 ---
+
+### Custom Instructions
+
+> In order to use custom instructions click the three dots by your account icon (bottom left) and select `Custom Instructions` from the menu.
+> You can use this feature to tell chat-GPT about your use case and what kind of response you wish to recieve.
+> ![Custom Instructions](./../images/2023-09-07-15-16-47.png)
+
+![My custom instructions](./../images/2023-09-07-15-22-44.png)
