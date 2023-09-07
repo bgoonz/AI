@@ -37,3 +37,17 @@
 9. Ethical and Bias Concerns:
 
 - These models can inadvertently perpetuate biases present in their training data, and they can be used for malicious purposes. Efforts are being made to address these ethical concerns and improve model behavior.
+
+---
+
+### Prompts:
+
+- A prompt is text input that describes your problem or request.
+
+  > Some exapmles of prompts:
+
+- How many citizens are there in Barcelona?
+- Who is the first president of the United States...
+- Who is Michael Jordan?
+
+- In all of the examples above the questions are unrelated to each other... however Chat-GPT is context aware... which means that (up to a certain number of tokens) it can factor in previous questions for context in answering the most current question asked of it.
