@@ -1,3 +1,6 @@
 - [PromptEngineering](./1-prompt-engineering/PromptEngineering.md)
 - [links](./links.md)
+- [Email](./practice/Email.md)
+- [Goals](./practice/Goals.md)
+- [Product-Anouncment](./practice/Product-Anouncment.md)
 - [README](./README.md)
