@@ -90,3 +90,41 @@ Coming home after such a day, one is undoubtedly exhausted. But it's a good kind
 
 - You are an experienced Twitter user, known for posting highly engadging tweets that lead users to like or retweet the tweets you post... write a tweet about hiking, the tweet should use no more than 2 emojis and target nature enthusiasts, it should highlight two advantages of going on a hike regularly.
 
+
+---
+#### Tips for Prompt Engineering
+- **Be Explicit**: 
+  - Clearly state what you're looking for. For instance, instead of "Tell me about apples," you might ask "Provide a detailed overview of the history, cultivation, and nutritional benefits of apples."
+
+- **Specify the Format**:
+  - If you want the answer in a specific format (e.g., bullet points, a numbered list, or a short summary), mention it in the prompt.
+
+- **Provide Context**:
+  - Giving a bit of background or explaining the reason for your question can help the model generate more relevant answers. For example, "I'm writing a research paper on climate change. Can you explain the greenhouse effect?"
+
+- **Ask Open-ended Questions**:
+  - Instead of asking "Is climate change real?", you might ask "What is the scientific consensus on climate change and its causes?"
+
+- **Avoid Leading or Biased Prompts**:
+  - Be aware of any biases in your phrasing. For instance, "Why is X bad?" might yield a different response than "What are the pros and cons of X?"
+
+- **Iterative Refinement**:
+  - If the first response isn't satisfactory, refine your prompt or ask follow-up questions to get the desired information.
+
+- **Use Role-playing**:
+  - Sometimes, setting a scenario or role for the model can help in getting the desired type of response. For example, "Imagine you're a history teacher. Explain the Renaissance to a 10-year-old."
+
+- **Set Constraints**:
+  - If you're looking for a concise answer, you can specify constraints like "In 50 words or less, describe the process of photosynthesis."
+
+- **Experiment and Iterate**:
+  - Don't hesitate to rephrase or ask the question in a different way if you're not getting the desired response. Different phrasings can lead to varied answers.
+
+> Continued...
+- Short sentences that describe the problem seem to work better than lists of keywords (in contrast with a google search)
+- Do include important keywords in your prompts however (and avoid unnecessary words)
+
+
+
+
+---
