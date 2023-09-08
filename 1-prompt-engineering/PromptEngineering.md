@@ -1,8 +1,5 @@
 # Prompt Engineering:
 
-
-
-
 #### Prompt engineering, in the context of models like ChatGPT, refers to the process of carefully crafting and refining input prompts to obtain desired outputs from the model. Given that models like GPT-4 don't have any explicit task-specific training, the way you phrase or structure a prompt can significantly influence the model's response.
 
 ## Key Aspects of Prompt Engineering
@@ -68,8 +65,7 @@ Coming home after such a day, one is undoubtedly exhausted. But it's a good kind
 > In order to use custom instructions, click the three dots by your account icon (bottom left) and select `Custom Instructions` from the menu.
 > You can use this feature to tell ChatGPT about your use case and what kind of response you wish to receive.
 
-
->![My custom instructions](./../images/2023-09-07-15-22-44.png)
+> ![My custom instructions](./../images/2023-09-07-15-22-44.png)
 
 **Giving ChatGPT Context**
 
@@ -80,51 +76,61 @@ Coming home after such a day, one is undoubtedly exhausted. But it's a good kind
 - You are an experienced Twitter user, known for posting highly engaging tweets that lead users to like or retweet the tweets you post... write a tweet about hiking.
 
 **Components of a Good Prompt**
+
 - Goal
 - Role
 - Constraints
 
-
 > Example of previous prompt with a constraint added:
-
 
 - You are an experienced Twitter user, known for posting highly engadging tweets that lead users to like or retweet the tweets you post... write a tweet about hiking, the tweet should use no more than 2 emojis and target nature enthusiasts, it should highlight two advantages of going on a hike regularly.
 
-
 ---
+
 #### Tips for Prompt Engineering
-- **Be Explicit**: 
+
+- **Be Explicit**:
+
   - Clearly state what you're looking for. For instance, instead of "Tell me about apples," you might ask "Provide a detailed overview of the history, cultivation, and nutritional benefits of apples."
 
 - **Specify the Format**:
+
   - If you want the answer in a specific format (e.g., bullet points, a numbered list, or a short summary), mention it in the prompt.
 
 - **Provide Context**:
+
   - Giving a bit of background or explaining the reason for your question can help the model generate more relevant answers. For example, "I'm writing a research paper on climate change. Can you explain the greenhouse effect?"
 
 - **Ask Open-ended Questions**:
+
   - Instead of asking "Is climate change real?", you might ask "What is the scientific consensus on climate change and its causes?"
 
 - **Avoid Leading or Biased Prompts**:
+
   - Be aware of any biases in your phrasing. For instance, "Why is X bad?" might yield a different response than "What are the pros and cons of X?"
 
 - **Iterative Refinement**:
+
   - If the first response isn't satisfactory, refine your prompt or ask follow-up questions to get the desired information.
 
 - **Use Role-playing**:
+
   - Sometimes, setting a scenario or role for the model can help in getting the desired type of response. For example, "Imagine you're a history teacher. Explain the Renaissance to a 10-year-old."
 
 - **Set Constraints**:
+
   - If you're looking for a concise answer, you can specify constraints like "In 50 words or less, describe the process of photosynthesis."
 
 - **Experiment and Iterate**:
   - Don't hesitate to rephrase or ask the question in a different way if you're not getting the desired response. Different phrasings can lead to varied answers.
 
 > Continued...
+
 - Short sentences that describe the problem seem to work better than lists of keywords (in contrast with a google search)
 - Do include important keywords in your prompts however (and avoid unnecessary words)
-
-
-
+- Define a target audience
+- Control tone, style and length of the output (by giving instructions to the model)
+- Specify output format (e.g. bullet points, numbered list, short summary, text, JSON, markdown,csv, js, py etc.)
+- 
 
 ---
