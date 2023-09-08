@@ -18,6 +18,10 @@ jobs:
       with:
         node-version: '14'  # You can specify your desired Node.js version
 
+    - name: Generate links.md from all markdown files
+      run: |
+        find . -name "*.md" -type f | sed 's/^\.\///' | sed 's/\.md$//' | awk -F/ '{print "- [" $NF "](./" $0 ".md)"}' > links.md
+
     - name: Install markdown-to-html converter
       run: npm install -g markdown-serve
 
