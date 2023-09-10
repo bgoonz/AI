@@ -6,3 +6,9 @@
 
 
 ![Code exicution in chat-GPT](./../images/2023-09-08-12-27-35.png)
+
+
+
+**Simplified Data Analytics Workflow:**
+
+> Data Preperation ---> Data Analysis ---> Data Visualization 
