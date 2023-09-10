@@ -1,6 +1,6 @@
 import os
 
-folder_path = os.path.expanduser('./')
+folder_path = os.path.expanduser("./")
 
 for filename in os.listdir(folder_path):
     old_file_path = os.path.join(folder_path, filename)

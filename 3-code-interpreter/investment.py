@@ -4,7 +4,7 @@ r = 0.08  # annual interest rate
 n = 38  # number of years
 
 # Calculate the future value using the formula
-FV = P * ((1 + r)**n - 1) / r
+FV = P * ((1 + r) ** n - 1) / r
 
 
 # Round the future value to two significant digits
