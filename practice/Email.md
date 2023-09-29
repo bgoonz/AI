@@ -1,7 +1,5 @@
 **Can you write me an email to a colleague that explains that I need iterative feedback on my prototype until the end of the current sprint (that ends this week). Explain politely that I've never worked with the Django backend on this project and that while the code I wrote works in isolation I will need help thinking of test cases to integrate it into the existing framework on this porject.**
 
-
-
 Subject: Request for Iterative Feedback on Prototype
 
 Hi [Colleague's Name],

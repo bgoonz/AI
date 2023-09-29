@@ -131,6 +131,4 @@ Coming home after such a day, one is undoubtedly exhausted. But it's a good kind
 - Define a target audience
 - Control tone, style and length of the output (by giving instructions to the model)
 - Specify output format (e.g. bullet points, numbered list, short summary, text, JSON, markdown,csv, js, py etc.)
--
-
----
+- ***

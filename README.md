@@ -126,18 +126,21 @@ I live in New York and I want to fly to Lisbon on September 29th. I want to stay
 
 ### [Prompt Engineering](./1-prompt-engineering/PromptEngineering.md)
 
-
 ---
+
 ---
 
 Skip a few sections...
 
 ---
+
 ---
 
 ### Chat GPT API:
 
 #### [Chat GPT API](https://platform.openai.com/docs/introduction)
+
+#### [Chat Reference](./4-chat-gpt-api/api-reference.md)
 
 **Installing open ai package**
 
@@ -145,10 +148,60 @@ Skip a few sections...
 pip install openai
 ```
 
-
 **Activating virtual environment**
-
 
 Open the Command Palette (Ctrl+Shift+P), then select the Python: Select Interpreter. From the list, select the virtual environment in your project folder that starts with .env.
 
 Run Terminal: Create New Integrated Terminal (Ctrl+Shift+` or from the Command Palette), which creates a terminal and automatically activates the virtual environment by running its activation script.
+
+**Basic Setup for Chat Completions**
+
+```python
+import os
+import openai
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+completion = openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=[
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "Hello!"}
+  ]
+)
+
+print(completion.choices[0].message.content)
+```
+
+**Temprature**
+
+- In the context of the OpenAI GPT API, temperature is a parameter that controls the randomness of the generated text. A higher temperature value, such as 0.8, will produce more random and diverse output, while a lower temperature value, such as 0.2, will make the output more focused and deterministic.
+
+```py
+import os
+import openai
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+userInput = input("Enter your message: ")
+
+completion = openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=[
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": userInput},
+  ],
+  temperature=0.9,
+)
+
+print(completion.choices[0].message.content)
+
+```
