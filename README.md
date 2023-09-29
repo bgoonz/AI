@@ -125,3 +125,30 @@ I live in New York and I want to fly to Lisbon on September 29th. I want to stay
 ### Prompt Engineering:
 
 ### [Prompt Engineering](./1-prompt-engineering/PromptEngineering.md)
+
+
+---
+---
+
+Skip a few sections...
+
+---
+---
+
+### Chat GPT API:
+
+#### [Chat GPT API](https://platform.openai.com/docs/introduction)
+
+**Installing open ai package**
+
+```bash
+pip install openai
+```
+
+
+**Activating virtual environment**
+
+
+Open the Command Palette (Ctrl+Shift+P), then select the Python: Select Interpreter. From the list, select the virtual environment in your project folder that starts with .env.
+
+Run Terminal: Create New Integrated Terminal (Ctrl+Shift+` or from the Command Palette), which creates a terminal and automatically activates the virtual environment by running its activation script.
