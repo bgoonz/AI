@@ -205,3 +205,139 @@ completion = openai.ChatCompletion.create(
 print(completion.choices[0].message.content)
 
 ```
+
+**Max Tokens**
+
+- The max_tokens parameter controls the maximum number of tokens that the API will return in the completion. A token is a single word, punctuation mark, or whitespace character. The default value is 150, and the maximum value is 2048.
+
+```py
+
+import os
+import openai
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+userInput = input("Enter your message: ")
+
+completion = openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=[
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": userInput},
+  ],
+  temperature=0.9,
+  max_tokens=10,
+)
+
+print(completion.choices[0].message.content)
+```
+
+> example of output with 10 max tokens:
+
+```bash
+$ python3 app.py
+Enter your message: what is a bananna?
+A banana is a tropical fruit that comes in a
+```
+
+**Completions Object**
+
+```py
+completion = openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=[
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": userInput},
+  ],
+  temperature=0.9,
+  max_tokens=100,
+)
+
+print(completion)
+```
+
+````json
+{
+  "id": "chatcmpl-84GS5hZFuorURgfvkaaIdSTg2q7Y4",
+  "object": "chat.completion",
+  "created": 1696027245,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Python lists are a type of data structure that allow you to store and organize multiple items in a single variable. Lists in Python are ordered and mutable, which means you can change, add, or remove elements from them.\n\nHere is an example of how to create a list in Python:\n\n```\nmy_list = [1, 2, 3, 4, 5]\n```\n\nIn this example, `my_list` is a list that contains the numbers 1, 2,"
+      },
+      "finish_reason": "length"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 100,
+    "total_tokens": 122
+  }
+}
+````
+
+**Roles**
+
+- Roles are used to define the identity or perspective of each participant in a conversation. Typically, there are three roles: "system", "user", and "assistant".
+- The "system" role provides high-level instructions to guide the conversation.
+- The "user" role represents the person or system querying the model.
+- The "assistant" role represents the ChatGPT model itself, which responds to the user's queries.
+  > By defining roles, the API allows for more structured and dynamic interactions, enabling developers to shape the behavior of the model in various conversational scenarios.
+
+```py
+  messages=[
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": userInput},
+  ],
+```
+
+### How to reference previous messages:
+
+```py
+import os
+import openai
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Set the OpenAI API key from the environment variable
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+# Initialize an empty list to store the conversation messages
+messages = []
+
+# Infinite loop to keep the chat session active
+while True:
+
+    # Get input from the user
+    userInput = input("You: ")
+
+    # Append the user's input to the messages list
+    messages.append({"role": "user", "content": userInput})
+
+    # Send a request to OpenAI's GPT-3.5 model with the conversation history
+    completion = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=messages,
+        temperature=0,
+    )
+
+    # Extract the assistant's response from the API's response
+    response = completion.choices[0].message.content
+
+    # Append the assistant's response to the messages list
+    messages.append({"role": "assistant", "content": response})
+
+    # Print the assistant's response
+    print('RESPONSE:', response)
+
+```

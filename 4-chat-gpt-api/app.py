@@ -7,15 +7,24 @@ load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-userInput = input("Enter your message: ")
 
-completion = openai.ChatCompletion.create(
-  model="gpt-3.5-turbo",
-  messages=[
-    {"role": "system", "content": "You are a helpful assistant."},
-    {"role": "user", "content": userInput},
-  ],
-  temperature=0.9,
-)
+messages = []
 
-print(completion.choices[0].message.content)
+while True:
+
+    userInput = input("You: ")
+
+    messages.append({"role": "user", "content": userInput})
+
+    completion = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=messages,
+        temperature=0,
+
+    )
+
+    response = completion.choices[0].message.content
+    messages.append({"role": "assistant", "content": response})
+
+    # print(completion)
+    print('RESPONSE:', response)
