@@ -341,3 +341,41 @@ while True:
     print('RESPONSE:', response)
 
 ```
+
+
+### Text Summarization tool:
+
+```py
+import os
+import openai
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+userInput = input("You: ")
+
+completion = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=[
+        {"role": "system", "content": "You are a text summarization chatbot. Your goal is to summarize the text that is given to you by the user."},
+        {"role": "user", "content": userInput},
+
+    ],
+    temperature=0
+)
+
+response = completion.choices[0].message.content
+
+print('Summarized Text: ', response)
+
+```
+> output:
+
+```bash
+$ python3 app.py
+You: A large language model is a sophisticated type of artificial intelligence model specifically designed to handle tasks related to human language. Trained on vast amounts of text data, often encompassing billions of words from diverse sources such as books, articles, and websites, these models absorb the intricacies of language, including grammar, semantics, and context. Through this extensive training, they learn to recognize patterns, nuances, and even cultural references, enabling them to generate, understand, and respond to natural language queries with a high degree of accuracy. Their deep understanding of language allows them to produce text that is coherent, contextually relevant, and often indistinguishable from human-written content. As a result, they are increasingly used in a variety of applications, from chatbots and virtual assistants to content generation and language translation.
+Summarized Text:  A large language model is an advanced AI model designed to handle tasks related to human language. These models are trained on vast amounts of text data and can understand grammar, semantics, and context. They can generate, understand, and respond to natural language queries accurately. Their deep understanding of language allows them to produce coherent and contextually relevant text that is often indistinguishable from human-written content. As a result, they are used in various applications such as chatbots, virtual assistants, content generation, and language translation.
+```

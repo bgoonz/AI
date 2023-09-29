@@ -17,14 +17,11 @@ while True:
     messages.append({"role": "user", "content": userInput})
 
     completion = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=messages,
-        temperature=0,
-
+        model="gpt-3.5-turbo", messages=messages, temperature=0
     )
 
     response = completion.choices[0].message.content
     messages.append({"role": "assistant", "content": response})
 
     # print(completion)
-    print('RESPONSE:', response)
+    print("RESPONSE:", response)
